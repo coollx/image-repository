@@ -1,0 +1,132 @@
+D:\x\cs\project\image repository [shopify challenge]\CLI>
+D:\x\cs\project\image repository [shopify challenge]\CLI>
+D:\x\cs\project\image repository [shopify challenge]\CLI>
+D:\x\cs\project\image repository [shopify challenge]\CLI>python repository.py
+Welcome to the image repo CLI version
+Here are the commands you may need to operate the repository:
+`upload` to upload the picture you want
+`show all` to list all the images information
+`display` to display specific images, please follow the instructions
+`delete ` to delete specific image,  please follow the instructions
+`analyze` to automatically add tags to all the pictures in database, this operation may take a few moments
+`search` to search the image with content you want, different categories need to be separated by columnes. example: find cat,dog
+`quit` to hault the program
+>upload
+>Please enter path to image: test images\boat.jpg
+>Please enter the name of image: image1
+Successfully uploaded  image1  @  22/09/2021 00:22:53
+>upload
+>Please enter path to image: test images\traffic light.jpg
+>Please enter the name of image: image2
+Successfully uploaded  image2  @  22/09/2021 00:23:31
+>show all
+1 image1 N/A 22/09/2021 00:22:53
+2 image2 N/A 22/09/2021 00:23:31
+>analyze
+[WARNING]Due to some limitation, this operation might take some time, please be patient.
+constructing indexing...please wait
+indexing complete
+adding tags to image # 1
+adding tags to image # 2
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+>upload
+>Please enter path to image: randompath
+File/Path does not exsite, try again
+>Please enter path to image: test images\car.jpg
+>Please enter the name of image: image3
+Successfully uploaded  image3  @  22/09/2021 00:24:32
+>upload
+>Please enter path to image: test images\
+File/Path does not exsite, try again
+>Please enter path to image: test images\cat and dogs.jpg
+>Please enter the name of image: test3
+Successfully uploaded  test3  @  22/09/2021 00:24:56
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+3 image3 N/A 22/09/2021 00:24:32
+4 test3 N/A 22/09/2021 00:24:56
+>delete
+>Please enter the name of image: test3
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+3 image3 N/A 22/09/2021 00:24:32
+>upload
+>Please enter path to image: test images\cat and dogs.jpg
+>Please enter the name of image: image3
+Successfully uploaded  image3  @  22/09/2021 00:25:35
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+3 image3 N/A 22/09/2021 00:24:32
+5 image3 N/A 22/09/2021 00:25:35
+>display
+>Please enter the name of image: image2
+>display
+>Please enter the name of image: image3
+The following images have the same name:
+3 image3 N/A 22/09/2021 00:24:32
+5 image3 N/A 22/09/2021 00:25:35
+>Please enter the ID of image:5
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+3 image3 N/A 22/09/2021 00:24:32
+5 image3 N/A 22/09/2021 00:25:35
+>analyze
+adding tags to image # 3
+adding tags to image # 5
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+3 image3 car 22/09/2021 00:24:32
+5 image3 dog,cat,truck 22/09/2021 00:25:35
+>search
+>please enter something you want to look for: traffic light
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+>display
+>Please enter the name of image: image2
+>somerandomcommand
+invalid command, please enter again
+>quit
+Thank you for using, bye.
+
+D:\x\cs\project\image repository [shopify challenge]\CLI>
+D:\x\cs\project\image repository [shopify challenge]\CLI>
+D:\x\cs\project\image repository [shopify challenge]\CLI>python repository.py
+Welcome to the image repo CLI version
+Here are the commands you may need to operate the repository:
+`upload` to upload the picture you want
+`show all` to list all the images information
+`display` to display specific images, please follow the instructions
+`delete ` to delete specific image,  please follow the instructions
+`analyze` to automatically add tags to all the pictures in database, this operation may take a few moments
+`search` to search the image with content you want, different categories need to be separated by columnes. example: find cat,dog
+`quit` to hault the program
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+3 image3 car 22/09/2021 00:24:32
+5 image3 dog,cat,truck 22/09/2021 00:25:35
+>delete
+>Please enter the name of image: image3
+The following images have the same name:
+3 image3 car 22/09/2021 00:24:32
+5 image3 dog,cat,truck 22/09/2021 00:25:35
+>Please enter the ID of image:3
+>show all
+1 image1 boat 22/09/2021 00:22:53
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+5 image3 dog,cat,truck 22/09/2021 00:25:35
+>delete
+>Please enter the name of image: image1
+>show all
+2 image2 bicycle,traffic light,car,person 22/09/2021 00:23:31
+5 image3 dog,cat,truck 22/09/2021 00:25:35
+>quit
+Thank you for using, bye.
+
+D:\x\cs\project\image repository [shopify challenge]\CLI>
